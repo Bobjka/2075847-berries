@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Ягода</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/Raleway/Raleway.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -12,14 +12,29 @@
   <body class="page__body">
     <header class="header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo-link" href="index.html">
-          <svg class="logo" width="133" height="60">
-            <use href="img/stack.svg#logo"></use>
+        <div class="main-nav__logo">
+          <svg class="main-nav__logo-icon" width="52" height="52">
+            <use href="img/icons/stack.svg#logo"></use>
           </svg>
-        </a>
+          <span class="main-nav__logo-title">Ягода</span>
+        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Кнопка открытия/закрытия мобильного меню.</span>
         </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Заказать</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <script src="./js/script.js" defer></script>

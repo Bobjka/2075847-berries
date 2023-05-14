@@ -1,5 +1,115 @@
 .header {
-  background-color: #663399;
+  background-color: #f1f6fc;;
   color: #ffffff;
-  padding: 10px 15px;
+  padding: 8px 26px;
 }
+
+.main-nav {
+  position: relative;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav__logo {
+  color: #0f805d;
+  font-family: "AmaticSC", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-decoration: none;
+  //Сделать в каталоге кликабельный логотип
+  //&:hover {
+  //  color: #7BDB0A;
+  //}
+  //
+  //&:active {
+  //  color: rgba(15, 128, 93, 0.5);
+  //}
+}
+
+.main-nav__logo-icon {
+  vertical-align: middle;
+}
+
+.main-nav__logo-title {
+  display: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 45px;
+  height: 35px;
+  padding: 0;
+  position: absolute;
+  top: 11px;
+  right: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 5px;
+    background-color: #0f805d;
+    border-radius: 5px;
+    box-shadow: 0 12px 0 0 #0f805d, 0 25px 0 0 #0f805d;
+  }
+
+  &:hover::before {
+    background-color: #7bdb0a;
+    box-shadow: 0 12px 0 0 #7bdb0a, 0 25px 0 0 #7bdb0a;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgba(15, 128, 93, 0.75);
+    transform: rotate(45deg);
+    box-shadow: none;
+    left: 13px;
+    top: 14px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgba(15, 128, 93, 0.75);
+    transform: rotate(-45deg);
+    left: 13px;
+    top: 14px;
+  }
+}
+//.main-nav__toggle-icon--cross {
+//  color: rgba(15, 128, 93, 0.75);
+//}
+//
+//.main-nav__toggle-icon--burger {
+//  color: #0f805d;
+//}
