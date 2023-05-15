@@ -81,6 +81,9 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  width: 35px;
+  right: 0;
+
   &::before {
     content: "";
     position: absolute;
@@ -90,7 +93,7 @@
     background-color: rgba(15, 128, 93, 0.75);
     transform: rotate(45deg);
     box-shadow: none;
-    left: 13px;
+    left: 0;
     top: 14px;
   }
 
@@ -102,14 +105,15 @@
     border-radius: 3px;
     background-color: rgba(15, 128, 93, 0.75);
     transform: rotate(-45deg);
-    left: 13px;
+    left: 0;
     top: 14px;
   }
+
+  &:hover::after {
+    background-color: #7bdb0a;
+  }
+
+  &:hover::before {
+    background-color: #7bdb0a;
+  }
 }
-//.main-nav__toggle-icon--cross {
-//  color: rgba(15, 128, 93, 0.75);
-//}
-//
-//.main-nav__toggle-icon--burger {
-//  color: #0f805d;
-//}
