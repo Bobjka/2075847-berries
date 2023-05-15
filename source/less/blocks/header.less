@@ -1,11 +1,13 @@
 .header {
   background-color: #f1f6fc;;
-  color: #ffffff;
-  padding: 8px 26px;
 }
 
 .main-nav {
-  position: relative;
+}
+
+.main-nav__container {
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+  padding: 8px 26px;
 }
 
 .main-nav--closed .main-nav__list {
@@ -42,13 +44,17 @@
 
 .main-nav__list {
   margin: 0;
-  padding: 0;
-  text-decoration: none;
+  list-style-type: none;
+  padding: 16px 0 138px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+  padding: 15px 0 14px 0;
+  display: block;
 }
 
 .main-nav__toggle {
@@ -59,8 +65,8 @@
   height: 35px;
   padding: 0;
   position: absolute;
-  top: 11px;
-  right: 3px;
+  top: 19px;
+  right: 29px;
 
   &::before {
     content: "";
@@ -82,7 +88,7 @@
 
 .main-nav--opened .main-nav__toggle {
   width: 35px;
-  right: 0;
+  right: 26px;
 
   &::before {
     content: "";
