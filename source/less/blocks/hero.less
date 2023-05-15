@@ -1,6 +1,22 @@
 .hero {
-  background-color: #d3e0e8;
+  background-color: #dfe6ec;
   padding: 68px 27px 100px 28px;
+  background-image: url("../../img/hero/hero-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: left -5px top -3px;
+  min-height: 640px;
+  background-size: auto;
+  box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero/hero-background-mobile.jpg");
+    background-size: auto, 705px 876px;
+    background-position: left -5px top -3px;
+  }
+
+  @media (min-width: 700px) {
+    background-size: cover;
+  }
 }
 
 .hero__title {
@@ -35,4 +51,7 @@
 .hero__button {
   padding: 16px 82px 16px 77px;
   box-sizing: border-box;
+  max-width: 336px;
+  text-align: center;
+  margin: 0 auto;
 }
