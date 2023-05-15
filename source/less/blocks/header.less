@@ -65,6 +65,19 @@
   color: #000000;
   padding: 15px 0 14px 0;
   display: inline-block;
+
+  &:hover {
+    color: #7bdb0a;
+  }
+
+  &:active {
+    color: #0f805d;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: #7bdb0a;
+  }
 }
 
 .main-nav__toggle {
@@ -92,6 +105,15 @@
   }
 
   &:hover::before {
+    background-color: #7bdb0a;
+    box-shadow: 0 12px 0 0 #7bdb0a, 0 25px 0 0 #7bdb0a;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::before {
     background-color: #7bdb0a;
     box-shadow: 0 12px 0 0 #7bdb0a, 0 25px 0 0 #7bdb0a;
   }
@@ -131,6 +153,14 @@
   }
 
   &:hover::before {
+    background-color: #7bdb0a;
+  }
+
+  &:focus-visible::after {
+    background-color: #7bdb0a;
+  }
+
+  &:focus-visible::before {
     background-color: #7bdb0a;
   }
 }
