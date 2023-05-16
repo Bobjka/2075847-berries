@@ -1,3 +1,4 @@
+// Открывающиеся/закрывающиеся мобильно меню
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -12,3 +13,8 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+// Интерактивная карта
+let map = document.querySelector('.contacts__wrapper-map');
+
+map.classList.remove('contacts__wrapper-map--nojs');
