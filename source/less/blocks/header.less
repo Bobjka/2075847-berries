@@ -10,6 +10,7 @@
     position: relative;
     justify-content: space-between;
     padding: 22px 26px 20px 26px;
+    align-content: start;
   }
 }
 
@@ -56,7 +57,7 @@
   //}
 
   @media (min-width: @tablet-width) {
-    align-self: center;
+    //align-self: center;
   }
 }
 
@@ -95,11 +96,12 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     position: static;
     width: auto;
     min-height: auto;
     padding: 0;
-    justify-content: space-between;
+    justify-content: end;
   }
 }
 
