@@ -11,6 +11,7 @@
     top: 0;
     background-image: url("../../img/decoration/decoration-block.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     transform: translateX(-114px);
   }
 
@@ -23,26 +24,23 @@
     bottom: 0;
     background-image: url("../../img/decoration/decoration-block.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     transform: translateX(-114px);
   }
 
   @media (min-width: @tablet-width) {
-    padding: 150px 26px 71px 26px;
+    padding: 150px 26px 118px 26px;
 
     &::before {
-      background-image: url("../../img/decoration/decoration-block-tablet.svg");
       width: 296px;
       height: 42px;
-      left: 50%;
       top: 36px;
       transform: translateX(-148px);
     }
 
     &::after {
-      background-image: url("../../img/decoration/decoration-block-tablet.svg");
       width: 296px;
       height: 42px;
-      left: 50%;
       transform: translateX(-148px);
     }
   }
@@ -103,19 +101,44 @@
     position: absolute;
     width: 76px;
     height: 32px;
+    background-size: contain;
     left: 50%;
     bottom: 22px;
     transform: translateX(-38px);
     background-image: url("../../img/decoration/decoration-card.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 96px;
+      height: 40px;
+      transform: translateX(-48px);
+      bottom: 40px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     max-width: 348px;
     min-height: 494px;
     box-sizing: border-box;
-    margin: 0 0 20px 0;
-    //испрвить ошибку
+    margin: 0 0 34px 0;
+    padding: 47px 34px 104px 34px;
+
+    &--sale {
+      padding: 31px 34px 104px 34px;
+    }
+
+    &--mix {
+      padding: 64px 34px 104px 34px;
+      margin: 0 10px 0 0;
+    }
+
+    &:nth-child(odd) {
+      margin: 0 20px 34px 0;
+    }
+
+    &:last-child:nth-child(odd) {
+      margin: 0 10px 34px 0;
+    }
   }
 }
 
@@ -133,12 +156,31 @@
   &--mix {
     margin: 0 0 44px 0;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0 0 43px 0;
+
+    &--sale {
+      margin: 0 0 25px 0;
+    }
+
+    &--mix {
+      margin: 0 0 59px 0;
+    }
+  }
 }
 
 .news__text {
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .news__date {
@@ -146,4 +188,9 @@
   font-size: 14px;
   line-height: 16px;
   margin: auto 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
