@@ -24,6 +24,7 @@
     box-shadow: none;
     padding: 0;
     display: flex;
+    align-items: center;
   }
 }
 
@@ -36,7 +37,7 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: block;
+  display: flex;
   position: static;
 }
 
@@ -68,10 +69,11 @@
 
 .main-nav__logo-title {
   display: none;
+  vertical-align: middle;
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 4px 0 0 8px;
+    padding: 4px 0 0 9px;
   }
 }
 
